@@ -49,6 +49,7 @@ function css_styles()
 	// Register the style like this for a theme:
 	wp_register_style( 'skeleton', get_template_directory_uri() . '/css/skeleton.css', array(), '20140104', 'all' );
 	wp_register_style( 'base', get_template_directory_uri() . '/css/base.css', array(), '20140104', 'all' );
+	wp_register_style( 'opensans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300', array(), '20160101', 'all' );
 	wp_register_style( 'slick', '//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css', array(), '20160101', 'all' );
 	wp_register_style( 'slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css', array(), '20160101', 'all' );
 	wp_register_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '20160101', 'all' );
@@ -57,6 +58,7 @@ function css_styles()
 	// For either a plugin or a theme, you can then enqueue the style:
 	wp_enqueue_style( 'skeleton' );
 	wp_enqueue_style( 'base' );
+	wp_enqueue_style( 'opensans' );
 	wp_enqueue_style( 'slick' );
 	wp_enqueue_style( 'slick-theme' );
 	wp_enqueue_style( 'fontawesome' );
