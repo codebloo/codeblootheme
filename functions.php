@@ -29,8 +29,6 @@ function js_scripts_load_cdn()
 	
 	// Register the script like this for a theme:
 	wp_register_script( 'slick', '//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js', array( 'jquery' ) );
-	
-	
 	wp_register_script( 'custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ) );
 
 	// For either a plugin or a theme, you can then enqueue the script:
@@ -54,6 +52,7 @@ function css_styles()
 	wp_register_style( 'slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css', array(), '20160101', 'all' );
 	wp_register_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '20160101', 'all' );
 	wp_register_style( 'custom', get_template_directory_uri() . '/css/custom.css', array(), '20140104', 'all' );
+	wp_register_style( 'wp', get_template_directory_uri() . '/css/wp.css', array(), '20160101', 'all' );
 
 	// For either a plugin or a theme, you can then enqueue the style:
 	wp_enqueue_style( 'skeleton' );
@@ -63,6 +62,7 @@ function css_styles()
 	wp_enqueue_style( 'slick-theme' );
 	wp_enqueue_style( 'fontawesome' );
 	wp_enqueue_style( 'custom' );
+	wp_enqueue_style( 'wp' );
 }
 add_action( 'wp_enqueue_scripts', 'css_styles' );
 
