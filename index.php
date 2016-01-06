@@ -5,6 +5,10 @@
 <?php the_content(); ?>
 <?php endwhile; endif; ?>
 </section>
-<aside class="columns four"><?php dynamic_sidebar('Blog');?></aside>
+<aside class="columns four">
+	<div id="sidebar">
+	<?php dynamic_sidebar('Blog');?>
+<div>
+</aside>
 </div>
 <?php get_footer();?>
